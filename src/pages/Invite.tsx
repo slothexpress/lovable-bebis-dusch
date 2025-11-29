@@ -86,17 +86,6 @@ const Invite = () => {
                         Detta ska såklart firas med FEST.
                     </p>
 
-                    <p>&nbsp;</p>
-
-                    <p className="text-xl md:text-2xl text-muted-foreground font-light animate-pop-in opacity-0" style={{ animationDelay: '200ms', animationFillMode: 'forwards' }}>
-                        Förvänta dig mat, cocktails & mocktails.
-                    </p>
-
-                    <p>&nbsp;</p>
-
-                    <p className="text-xl md:text-2xl text-muted-foreground font-light animate-pop-in opacity-0" style={{ animationDelay: '200ms', animationFillMode: 'forwards' }}>
-                        HOPPAS DU KAN VARA MED!
-                    </p>
 
                 </header>
 
@@ -109,9 +98,12 @@ const Invite = () => {
 
 
                 <header className="text-center mb-16">
-                <p className="text-xl md:text-2xl text-muted-foreground font-light animate-pop-in opacity-0" style={{ animationDelay: '200ms', animationFillMode: 'forwards' }}>
-                    Kom ihåg att detta är en överraskning!
-                </p>
+
+                    <p className="text-xl md:text-2xl text-muted-foreground font-light animate-pop-in opacity-0" style={{ animationDelay: '200ms', animationFillMode: 'forwards' }}>
+                        Förvänta dig mat, cocktails & mocktails.
+                    </p>
+
+
                 </header>
 
 

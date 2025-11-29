@@ -50,7 +50,18 @@ const RSVPForm = () => {
   if (submitted) {
     return (
       <div className="text-center py-12 animate-pop-in">
-        <div className="text-6xl mb-4 animate-bounce-gentle">💌</div> {/* Svar är skickat*/}
+        <div className="text-6xl mb-4 animate-bounce-gentle">
+
+            💌 {/* Svar är skickat*/}
+
+        </div>
+          <p>
+              ❤ KOM IHÅG ❤
+          </p>
+
+          <p>
+              DETTA ÄR EN ÖVERRASKNING
+          </p>
       </div>
     );
   }
