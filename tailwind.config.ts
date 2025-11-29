@@ -14,8 +14,8 @@ export default {
     },
     extend: {
       fontFamily: {
-        display: ['Playfair Display', 'serif'],
-        body: ['Inter', 'sans-serif'],
+        display: ['Quicksand', 'sans-serif'],
+        body: ['Nunito', 'sans-serif'],
       },
       colors: {
         border: "hsl(var(--border))",
@@ -54,11 +54,16 @@ export default {
         mint: {
           DEFAULT: "hsl(var(--mint))",
           light: "hsl(var(--mint-light))",
+          glow: "hsl(var(--mint-glow))",
         },
-        sage: "hsl(var(--sage))",
+        sage: {
+          DEFAULT: "hsl(var(--sage))",
+          light: "hsl(var(--sage-light))",
+        },
         forest: "hsl(var(--forest))",
         lime: "hsl(var(--lime))",
         cream: "hsl(var(--cream))",
+        blush: "hsl(var(--blush))",
       },
       borderRadius: {
         lg: "var(--radius)",
