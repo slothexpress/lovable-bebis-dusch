@@ -39,32 +39,32 @@ const Invite = () => {
                     <p>&nbsp;</p>
 
                     <p className="text-xl md:text-2xl text-muted-foreground font-light animate-pop-in opacity-0" style={{ animationDelay: '200ms', animationFillMode: 'forwards' }}>
-                        Trang har en bebbi i magen!!!
+                        Trang har en bebbi i magen!
                     </p>
 
                     <p className="text-xl md:text-2xl text-muted-foreground font-light animate-pop-in opacity-0" style={{ animationDelay: '200ms', animationFillMode: 'forwards' }}>
-                        Hon ska givetvis överraskas med en...
+                        Vi ska överraska henne med en
                     </p>
 
 
+                    <p>&nbsp;</p>
                     <p>&nbsp;</p>
 
                     <h1 className="font-display text-5xl md:text-7xl font-semibold mb-4 animate-pop-in opacity-0" style={{ animationDelay: '100ms', animationFillMode: 'forwards' }}>
                         <span className="shimmer-text">👶 Bebis Dusch 🚿</span>
                     </h1>
 
-
-
+                    <p>&nbsp;</p>
                     <p>&nbsp;</p>
 
 
                     <p className="text-xl md:text-2xl text-muted-foreground font-light animate-pop-in opacity-0" style={{ animationDelay: '200ms', animationFillMode: 'forwards' }}>
-                        Lilla Luna A.K.A. Bé Loo Nah är på väg...
+                        Lilla Luna A.K.A. Bé Loo Nah
                     </p>
 
 
                     <p className="text-xl md:text-2xl text-muted-foreground font-light animate-pop-in opacity-0" style={{ animationDelay: '200ms', animationFillMode: 'forwards' }}>
-                        Detta ska såklart firas med kalas.
+                        ÄR PÅ VÄG
                     </p>
 
                     <p>&nbsp;</p>
@@ -79,15 +79,20 @@ const Invite = () => {
                     <p>&nbsp;</p>
 
                     <p className="text-xl md:text-2xl text-muted-foreground font-light animate-pop-in opacity-0" style={{ animationDelay: '200ms', animationFillMode: 'forwards' }}>
-                        Det kommer finnas mat, cocktails & mocktails.
+                        Detta ska såklart firas med FEST.
                     </p>
+
+                    <p>&nbsp;</p>
 
                     <p className="text-xl md:text-2xl text-muted-foreground font-light animate-pop-in opacity-0" style={{ animationDelay: '200ms', animationFillMode: 'forwards' }}>
-                        Kom ihåg att detta är en överraskning!
+                        Förvänta dig mat, cocktails & mocktails.
                     </p>
 
+                    <p>&nbsp;</p>
 
-
+                    <p className="text-xl md:text-2xl text-muted-foreground font-light animate-pop-in opacity-0" style={{ animationDelay: '200ms', animationFillMode: 'forwards' }}>
+                        Hoppas du kan vara med!
+                    </p>
 
                 </header>
 
@@ -96,6 +101,15 @@ const Invite = () => {
                 <section className="mb-20">
                     <EventDetails />
                 </section>
+
+
+
+                <header className="text-center mb-16">
+                <p className="text-xl md:text-2xl text-muted-foreground font-light animate-pop-in opacity-0" style={{ animationDelay: '200ms', animationFillMode: 'forwards' }}>
+                    Kom ihåg att detta är en överraskning!
+                </p>
+                </header>
+
 
                 {/* RSVP Section */}
                 <section className="max-w-xl mx-auto">
