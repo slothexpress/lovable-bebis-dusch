@@ -53,7 +53,8 @@ const Invite = () => {
                     <p>&nbsp;</p>
 
                     <h1 className="font-display text-5xl md:text-7xl font-semibold mb-4 animate-pop-in opacity-0" style={{ animationDelay: '100ms', animationFillMode: 'forwards' }}>
-                        <span className="shimmer-text">👶 Bebis Dusch 🚿</span>
+                        <p className="shimmer-text">👶 Bebis</p>
+                        <p className="shimmer-text">Dusch 🚿</p>
                     </h1>
 
                     <p>&nbsp;</p>
