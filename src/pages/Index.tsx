@@ -23,16 +23,13 @@ const Index = () => {
         <Heart className="absolute bottom-60 left-1/4 w-4 h-4 text-accent/20 animate-pulse-scale" style={{ animationDelay: '0.5s' }} />
       </div>
 
-      <div className="relative z-10 container max-w-4xl mx-auto px-4 py-16 md:py-24">
+        <div className="relative z-10 container max-w-4xl mx-auto px-4 py-16 md:py-24 flex flex-col justify-center min-h-screen">
         {/* Header Section */}
         <header className="text-center mb-16">
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-primary/30 bg-primary/5 mb-8 animate-pop-in opacity-0" style={{ animationFillMode: 'forwards' }}>
-            <Baby className="w-5 h-5 text-primary animate-wiggle" />
-            <span className="text-sm uppercase tracking-widest text-primary">HEJ PÅ DIG</span>
-            <Baby className="w-5 h-5 text-primary animate-wiggle" style={{ animationDelay: '0.5s' }} />
-          </div>
           
           <h1 className="font-display text-5xl md:text-7xl font-semibold mb-4 animate-pop-in opacity-0" style={{ animationDelay: '100ms', animationFillMode: 'forwards' }}>
+
+              <p className="shimmer-text">👶</p>
 
               <p>&nbsp;</p>
 
@@ -40,10 +37,9 @@ const Index = () => {
 
               <p>&nbsp;</p>
 
-              <p className="shimmer-text">👶 🚿</p>
+              <p className="shimmer-text">🚿</p>
 
           </h1>
-
 
         </header>
 
