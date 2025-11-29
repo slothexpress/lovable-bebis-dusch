@@ -17,19 +17,16 @@ const RSVPForm = () => {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    
     if (!attendance) {
       toast.error("Svara om du ska vara med eller inte!");
       return;
     }
-    
-    if (!plusOne) {
+    // Only require plusOne if attendance is "yes"
+    if (attendance === "yes" && !plusOne) {
       toast.error("Svara om du tar med en gäst eller inte!");
       return;
     }
-
     setSubmitting(true);
-
     try {
       await emailjs.send(
         'service_efuzk8p',
@@ -47,7 +44,6 @@ const RSVPForm = () => {
     } catch (err) {
       toast.error("Kunde inte skicka. Försök igen.");
     }
-    
     setSubmitting(false);
   };
 
@@ -74,7 +70,7 @@ const RSVPForm = () => {
           </div>
           <div className="flex items-center space-x-3 p-4 rounded-lg border border-border bg-secondary/50 hover:border-primary/50 hover:bg-primary/5 transition-all duration-300 cursor-pointer group">
             <RadioGroupItem value="no" id="no" className="border-primary text-primary" />
-            <Label htmlFor="no" className="cursor-pointer flex-1 group-hover:text-primary transition-colors">NEJ, JAG KAN INTE 💔💔😭😭</Label>
+            <Label htmlFor="no" className="cursor-pointer flex-1 group-hover:text-primary transition-colors">NEJ, JAG KAN INTE 😭😭😭</Label>
           </div>
 
         </RadioGroup>
@@ -84,9 +80,8 @@ const RSVPForm = () => {
       <div className="space-y-4 animate-pop-in opacity-0" style={{ animationDelay: '200ms', animationFillMode: 'forwards' }}>
         <Label className="text-lg font-display text-cream">
           TAR DU MED EN GÄST?
-
         </Label>
-        <RadioGroup value={plusOne} onValueChange={setPlusOne} className="space-y-3">
+        <RadioGroup value={plusOne} onValueChange={setPlusOne} className="space-y-3" disabled={attendance !== "yes"}>
           <div className="flex items-center space-x-3 p-4 rounded-lg border border-border bg-secondary/50 hover:border-primary/50 hover:bg-primary/5 transition-all duration-300 cursor-pointer group">
             <RadioGroupItem value="yes" id="plus-yes" className="border-primary text-primary" />
             <Label htmlFor="plus-yes" className="cursor-pointer flex-1 group-hover:text-primary transition-colors">Ja</Label>

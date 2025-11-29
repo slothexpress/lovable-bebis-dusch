@@ -43,7 +43,7 @@ const Invite = () => {
                     </p>
 
                     <p className="text-xl md:text-2xl text-muted-foreground font-light animate-pop-in opacity-0" style={{ animationDelay: '200ms', animationFillMode: 'forwards' }}>
-                        Hon ska överraskas med en...
+                        Hon ska givetvis överraskas med en...
                     </p>
 
 
@@ -83,7 +83,7 @@ const Invite = () => {
                     </p>
 
                     <p className="text-xl md:text-2xl text-muted-foreground font-light animate-pop-in opacity-0" style={{ animationDelay: '200ms', animationFillMode: 'forwards' }}>
-                        Kom ihåg att detta är en överraskningsfest!
+                        Kom ihåg att detta är en överraskning!
                     </p>
 
 
