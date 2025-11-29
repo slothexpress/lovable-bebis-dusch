@@ -4,18 +4,21 @@ const EventDetails = () => {
   const details = [
     {
       icon: Calendar,
-      label: "Date",
-      value: "Saturday, December 14th, 2024",
+      label: "Datum",
+      value: "Lördag 14 december 2024",
+      delay: 100,
     },
     {
       icon: Clock,
-      label: "Time",
-      value: "7:00 PM onwards",
+      label: "Tid",
+      value: "Kl. 15:00",
+      delay: 200,
     },
     {
       icon: MapPin,
-      label: "Location",
-      value: "The Grand Ballroom, 123 Celebration Avenue",
+      label: "Plats",
+      value: "Hemma hos oss, Exempelgatan 123",
+      delay: 300,
     },
   ];
 
@@ -24,14 +27,14 @@ const EventDetails = () => {
       {details.map((detail, index) => (
         <div
           key={detail.label}
-          className="flex flex-col items-center text-center p-6 rounded-xl border border-border bg-card/50 backdrop-blur-sm animate-fade-in-up opacity-0"
+          className="group flex flex-col items-center text-center p-6 rounded-xl border border-border bg-card/50 backdrop-blur-sm animate-pop-in opacity-0 hover:border-primary/50 hover:shadow-mint transition-all duration-300"
           style={{ 
-            animationDelay: `${(index + 1) * 100}ms`,
+            animationDelay: `${detail.delay}ms`,
             animationFillMode: 'forwards'
           }}
         >
-          <div className="w-12 h-12 rounded-full bg-gold/10 flex items-center justify-center mb-4">
-            <detail.icon className="w-6 h-6 text-gold" />
+          <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-4 group-hover:animate-bounce-gentle">
+            <detail.icon className="w-6 h-6 text-primary" />
           </div>
           <span className="text-sm uppercase tracking-widest text-muted-foreground mb-2">
             {detail.label}
