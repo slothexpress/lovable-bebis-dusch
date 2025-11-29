@@ -65,11 +65,15 @@ const RSVPForm = () => {
         <RadioGroup value={attendance} onValueChange={setAttendance} className="space-y-3">
           <div className="flex items-center space-x-3 p-4 rounded-lg border border-border bg-secondary/50 hover:border-primary/50 hover:bg-primary/5 transition-all duration-300 cursor-pointer group">
             <RadioGroupItem value="yes" id="yes" className="border-primary text-primary" />
-            <Label htmlFor="yes" className="cursor-pointer flex-1 group-hover:text-primary transition-colors">JA SÅKLART ❤️‍🔥‍️❤️‍🔥‍️❤️‍🔥‍</Label>
+            <Label htmlFor="yes" className="cursor-pointer flex-1 group-hover:text-primary transition-colors">
+                JA, SÅKLART ❤️‍🔥‍️❤️‍🔥‍️❤️‍🔥‍
+            </Label>
           </div>
           <div className="flex items-center space-x-3 p-4 rounded-lg border border-border bg-secondary/50 hover:border-primary/50 hover:bg-primary/5 transition-all duration-300 cursor-pointer group">
             <RadioGroupItem value="no" id="no" className="border-primary text-primary" />
-            <Label htmlFor="no" className="cursor-pointer flex-1 group-hover:text-primary transition-colors">NEJ, JAG KAN INTE 😭😭😭</Label>
+            <Label htmlFor="no" className="cursor-pointer flex-1 group-hover:text-primary transition-colors">
+                NEJ, JAG KAN INTE 😭😭😭
+            </Label>
           </div>
         </RadioGroup>
       </div>

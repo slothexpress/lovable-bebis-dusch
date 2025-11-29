@@ -5,7 +5,7 @@ const EventDetails = () => {
     {
       icon: Calendar,
       label: "Datum",
-      value: "LÖRDAG 7 FEBRUARI 2026",
+      value: "Lördag 7 FEB, 2026",
       delay: 100,
     },
     {
@@ -17,7 +17,7 @@ const EventDetails = () => {
     {
       icon: MapPin,
       label: "Plats",
-      value: "MONTBIJOURGATAN 18, MALMÖ",
+      value: "Montbijougatan 18, Malmö",
       delay: 300,
     },
   ];

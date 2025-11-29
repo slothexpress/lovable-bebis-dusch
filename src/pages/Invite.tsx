@@ -21,7 +21,7 @@ const Invite = () => {
                 <Leaf className="absolute top-40 left-16 w-6 h-6 text-accent/20 floating-leaf rotate-45" />
                 <Leaf className="absolute bottom-40 right-16 w-10 h-10 text-primary/15 floating-leaf -rotate-12" />
                 <Heart className="absolute top-60 right-1/4 w-5 h-5 text-primary/20 animate-pulse-scale" />
-                <Heart className="absolute bottom-60 left-1/4 w-4 h-4 text-accent/20 animate-pulse-scale" style={{ animationDelay: '0.5s' }} />
+                <Heart className="absolute bottom-60 left-1/4 w-4 h-4 text-accent/20 animate-pulse-scale" style={{ animationDelay: '0.1s' }} />
             </div>
 
             <div className="relative z-10 container max-w-4xl mx-auto px-4 py-16 md:py-24">
@@ -42,8 +42,10 @@ const Invite = () => {
                         Trang har en bebbi i magen!
                     </p>
 
+                    <p>&nbsp;</p>
+
                     <p className="text-xl md:text-2xl text-muted-foreground font-light animate-pop-in opacity-0" style={{ animationDelay: '200ms', animationFillMode: 'forwards' }}>
-                        Vi ska överraska henne med en
+                        VI SKA ÖVERRASKA HENNE MED
                     </p>
 
 
@@ -62,6 +64,7 @@ const Invite = () => {
                         Lilla Luna A.K.A. Bé Loo Nah
                     </p>
 
+                    <p>&nbsp;</p>
 
                     <p className="text-xl md:text-2xl text-muted-foreground font-light animate-pop-in opacity-0" style={{ animationDelay: '200ms', animationFillMode: 'forwards' }}>
                         ÄR PÅ VÄG
@@ -91,7 +94,7 @@ const Invite = () => {
                     <p>&nbsp;</p>
 
                     <p className="text-xl md:text-2xl text-muted-foreground font-light animate-pop-in opacity-0" style={{ animationDelay: '200ms', animationFillMode: 'forwards' }}>
-                        Hoppas du kan vara med!
+                        HOPPAS DU KAN VARA MED!
                     </p>
 
                 </header>
@@ -118,6 +121,7 @@ const Invite = () => {
                         <RSVPForm />
                     </div>
                 </section>
+
 
             </div>
         </main>
