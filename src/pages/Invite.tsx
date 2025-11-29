@@ -39,7 +39,11 @@ const Invite = () => {
                     <p>&nbsp;</p>
 
                     <p className="text-xl md:text-2xl text-muted-foreground font-light animate-pop-in opacity-0" style={{ animationDelay: '200ms', animationFillMode: 'forwards' }}>
-                        Du är varmt välkommen på Trangs
+                        Trang har en bebbi i magen!!!
+                    </p>
+
+                    <p className="text-xl md:text-2xl text-muted-foreground font-light animate-pop-in opacity-0" style={{ animationDelay: '200ms', animationFillMode: 'forwards' }}>
+                        Hon ska överraskas med en...
                     </p>
 
 
@@ -60,7 +64,7 @@ const Invite = () => {
 
 
                     <p className="text-xl md:text-2xl text-muted-foreground font-light animate-pop-in opacity-0" style={{ animationDelay: '200ms', animationFillMode: 'forwards' }}>
-                        Detta ska såklart firas med fest.
+                        Detta ska såklart firas med kalas.
                     </p>
 
                     <p>&nbsp;</p>
@@ -79,7 +83,7 @@ const Invite = () => {
                     </p>
 
                     <p className="text-xl md:text-2xl text-muted-foreground font-light animate-pop-in opacity-0" style={{ animationDelay: '200ms', animationFillMode: 'forwards' }}>
-                        Hoppas du kan vara med!
+                        Kom ihåg att detta är en överraskningsfest!
                     </p>
 
 
