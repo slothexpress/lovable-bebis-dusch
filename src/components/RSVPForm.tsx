@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useParams } from "react-router-dom";
 import { Label } from "@/components/ui/label";
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 import { Textarea } from "@/components/ui/textarea";
@@ -7,6 +8,7 @@ import { toast } from "sonner";
 import emailjs from "@emailjs/browser";
 
 const RSVPForm = () => {
+  const { name } = useParams<{ name?: string }>();
   const [attendance, setAttendance] = useState<string>("");
   const [plusOne, setPlusOne] = useState<string>("");
   const [allergies, setAllergies] = useState<string>("");
@@ -33,7 +35,7 @@ const RSVPForm = () => {
         'service_efuzk8p',
         'template_e50k5uj',
         {
-          name: 'Guest RSVP',
+          name: name || 'Guest RSVP',
           answer1: attendance,
           answer2: plusOne,
           answer3: allergies || 'Ingen specialkost'
