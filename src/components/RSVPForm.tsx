@@ -4,14 +4,16 @@ import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 import { Textarea } from "@/components/ui/textarea";
 import { Button } from "@/components/ui/button";
 import { toast } from "sonner";
+import emailjs from "@emailjs/browser";
 
 const RSVPForm = () => {
   const [attendance, setAttendance] = useState<string>("");
   const [plusOne, setPlusOne] = useState<string>("");
   const [allergies, setAllergies] = useState<string>("");
   const [submitted, setSubmitted] = useState(false);
+  const [submitting, setSubmitting] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     
     if (!attendance) {
@@ -24,10 +26,27 @@ const RSVPForm = () => {
       return;
     }
 
-    // In a real app, this would send to a backend
-    console.log({ attendance, plusOne, allergies });
-    setSubmitted(true);
-    toast.success("Thank you for your RSVP!");
+    setSubmitting(true);
+
+    try {
+      await emailjs.send(
+        'service_efuzk8p',
+        'template_e50k5uj',
+        {
+          name: 'Guest RSVP',
+          answer1: attendance,
+          answer2: plusOne,
+          answer3: allergies || 'None specified'
+        },
+        'qphzOCWK-Et9KsVZF'
+      );
+      setSubmitted(true);
+      toast.success("Thank you for your RSVP!");
+    } catch (err) {
+      toast.error("Failed to send. Please try again.");
+    }
+    
+    setSubmitting(false);
   };
 
   if (submitted) {
@@ -100,9 +119,10 @@ const RSVPForm = () => {
       <div className="animate-fade-in-up animate-delay-400 opacity-0 pt-4" style={{ animationFillMode: 'forwards' }}>
         <Button 
           type="submit" 
-          className="w-full bg-gold text-primary-foreground hover:bg-gold-light font-display text-lg py-6 shadow-gold transition-all duration-300 hover:shadow-lg"
+          disabled={submitting}
+          className="w-full bg-gold text-primary-foreground hover:bg-gold-light font-display text-lg py-6 shadow-gold transition-all duration-300 hover:shadow-lg disabled:opacity-50"
         >
-          Send RSVP
+          {submitting ? "Sending..." : "Send RSVP"}
         </Button>
       </div>
     </form>
