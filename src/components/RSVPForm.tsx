@@ -17,12 +17,12 @@ const RSVPForm = () => {
     e.preventDefault();
     
     if (!attendance) {
-      toast.error("Please select your attendance");
+      toast.error("Vänligen välj om du kommer");
       return;
     }
     
     if (!plusOne) {
-      toast.error("Please indicate if you're bringing a plus one");
+      toast.error("Vänligen ange om du tar med någon");
       return;
     }
 
@@ -41,9 +41,9 @@ const RSVPForm = () => {
         'qphzOCWK-Et9KsVZF'
       );
       setSubmitted(true);
-      toast.success("Thank you for your RSVP!");
+      toast.success("Tack för ditt svar!");
     } catch (err) {
-      toast.error("Failed to send. Please try again.");
+      toast.error("Kunde inte skicka. Försök igen.");
     }
     
     setSubmitting(false);
@@ -51,11 +51,11 @@ const RSVPForm = () => {
 
   if (submitted) {
     return (
-      <div className="text-center py-12 animate-fade-in-up">
-        <div className="text-6xl mb-4">🎉</div>
-        <h3 className="font-display text-2xl text-gold mb-2">Thank You!</h3>
+      <div className="text-center py-12 animate-pop-in">
+        <div className="text-6xl mb-4 animate-bounce-gentle">🎉</div>
+        <h3 className="font-display text-2xl text-primary mb-2">Tack så mycket!</h3>
         <p className="text-muted-foreground">
-          Your response has been recorded. We can't wait to celebrate with you!
+          Vi har tagit emot ditt svar. Vi ses snart!
         </p>
       </div>
     );
@@ -64,65 +64,65 @@ const RSVPForm = () => {
   return (
     <form onSubmit={handleSubmit} className="space-y-8">
       {/* Attendance */}
-      <div className="space-y-4 animate-fade-in-up animate-delay-100 opacity-0" style={{ animationFillMode: 'forwards' }}>
-        <Label className="text-lg font-display text-champagne">
-          Will you be attending?
+      <div className="space-y-4 animate-pop-in opacity-0" style={{ animationDelay: '100ms', animationFillMode: 'forwards' }}>
+        <Label className="text-lg font-display text-cream">
+          Kommer du?
         </Label>
         <RadioGroup value={attendance} onValueChange={setAttendance} className="space-y-3">
-          <div className="flex items-center space-x-3 p-4 rounded-lg border border-border bg-secondary/50 hover:border-gold/50 transition-colors cursor-pointer">
-            <RadioGroupItem value="yes" id="yes" className="border-gold text-gold" />
-            <Label htmlFor="yes" className="cursor-pointer flex-1">Joyfully Accept</Label>
+          <div className="flex items-center space-x-3 p-4 rounded-lg border border-border bg-secondary/50 hover:border-primary/50 hover:bg-primary/5 transition-all duration-300 cursor-pointer group">
+            <RadioGroupItem value="yes" id="yes" className="border-primary text-primary" />
+            <Label htmlFor="yes" className="cursor-pointer flex-1 group-hover:text-primary transition-colors">Ja, jag kommer! 🎊</Label>
           </div>
-          <div className="flex items-center space-x-3 p-4 rounded-lg border border-border bg-secondary/50 hover:border-gold/50 transition-colors cursor-pointer">
-            <RadioGroupItem value="no" id="no" className="border-gold text-gold" />
-            <Label htmlFor="no" className="cursor-pointer flex-1">Regretfully Decline</Label>
+          <div className="flex items-center space-x-3 p-4 rounded-lg border border-border bg-secondary/50 hover:border-primary/50 hover:bg-primary/5 transition-all duration-300 cursor-pointer group">
+            <RadioGroupItem value="no" id="no" className="border-primary text-primary" />
+            <Label htmlFor="no" className="cursor-pointer flex-1 group-hover:text-primary transition-colors">Tyvärr, kan inte 😢</Label>
           </div>
-          <div className="flex items-center space-x-3 p-4 rounded-lg border border-border bg-secondary/50 hover:border-gold/50 transition-colors cursor-pointer">
-            <RadioGroupItem value="maybe" id="maybe" className="border-gold text-gold" />
-            <Label htmlFor="maybe" className="cursor-pointer flex-1">Not Sure Yet</Label>
+          <div className="flex items-center space-x-3 p-4 rounded-lg border border-border bg-secondary/50 hover:border-primary/50 hover:bg-primary/5 transition-all duration-300 cursor-pointer group">
+            <RadioGroupItem value="maybe" id="maybe" className="border-primary text-primary" />
+            <Label htmlFor="maybe" className="cursor-pointer flex-1 group-hover:text-primary transition-colors">Vet inte än 🤔</Label>
           </div>
         </RadioGroup>
       </div>
 
       {/* Plus One */}
-      <div className="space-y-4 animate-fade-in-up animate-delay-200 opacity-0" style={{ animationFillMode: 'forwards' }}>
-        <Label className="text-lg font-display text-champagne">
-          Will you be bringing a plus one?
+      <div className="space-y-4 animate-pop-in opacity-0" style={{ animationDelay: '200ms', animationFillMode: 'forwards' }}>
+        <Label className="text-lg font-display text-cream">
+          Tar du med någon?
         </Label>
         <RadioGroup value={plusOne} onValueChange={setPlusOne} className="space-y-3">
-          <div className="flex items-center space-x-3 p-4 rounded-lg border border-border bg-secondary/50 hover:border-gold/50 transition-colors cursor-pointer">
-            <RadioGroupItem value="yes" id="plus-yes" className="border-gold text-gold" />
-            <Label htmlFor="plus-yes" className="cursor-pointer flex-1">Yes, plus one</Label>
+          <div className="flex items-center space-x-3 p-4 rounded-lg border border-border bg-secondary/50 hover:border-primary/50 hover:bg-primary/5 transition-all duration-300 cursor-pointer group">
+            <RadioGroupItem value="yes" id="plus-yes" className="border-primary text-primary" />
+            <Label htmlFor="plus-yes" className="cursor-pointer flex-1 group-hover:text-primary transition-colors">Ja, +1 👫</Label>
           </div>
-          <div className="flex items-center space-x-3 p-4 rounded-lg border border-border bg-secondary/50 hover:border-gold/50 transition-colors cursor-pointer">
-            <RadioGroupItem value="no" id="plus-no" className="border-gold text-gold" />
-            <Label htmlFor="plus-no" className="cursor-pointer flex-1">No, just me</Label>
+          <div className="flex items-center space-x-3 p-4 rounded-lg border border-border bg-secondary/50 hover:border-primary/50 hover:bg-primary/5 transition-all duration-300 cursor-pointer group">
+            <RadioGroupItem value="no" id="plus-no" className="border-primary text-primary" />
+            <Label htmlFor="plus-no" className="cursor-pointer flex-1 group-hover:text-primary transition-colors">Nej, bara jag 🙋</Label>
           </div>
         </RadioGroup>
       </div>
 
       {/* Allergies */}
-      <div className="space-y-4 animate-fade-in-up animate-delay-300 opacity-0" style={{ animationFillMode: 'forwards' }}>
-        <Label htmlFor="allergies" className="text-lg font-display text-champagne">
-          Any food allergies or dietary restrictions?
+      <div className="space-y-4 animate-pop-in opacity-0" style={{ animationDelay: '300ms', animationFillMode: 'forwards' }}>
+        <Label htmlFor="allergies" className="text-lg font-display text-cream">
+          Matallergier eller specialkost?
         </Label>
         <Textarea
           id="allergies"
-          placeholder="Please let us know if you have any allergies or dietary requirements..."
+          placeholder="Berätta om du har några allergier eller specialkost..."
           value={allergies}
           onChange={(e) => setAllergies(e.target.value)}
-          className="min-h-[100px] bg-secondary/50 border-border focus:border-gold resize-none"
+          className="min-h-[100px] bg-secondary/50 border-border focus:border-primary resize-none transition-colors"
         />
       </div>
 
       {/* Submit */}
-      <div className="animate-fade-in-up animate-delay-400 opacity-0 pt-4" style={{ animationFillMode: 'forwards' }}>
+      <div className="animate-pop-in opacity-0 pt-4" style={{ animationDelay: '400ms', animationFillMode: 'forwards' }}>
         <Button 
           type="submit" 
           disabled={submitting}
-          className="w-full bg-gold text-primary-foreground hover:bg-gold-light font-display text-lg py-6 shadow-gold transition-all duration-300 hover:shadow-lg disabled:opacity-50"
+          className="w-full bg-primary text-primary-foreground hover:bg-mint-light font-display text-lg py-6 shadow-mint transition-all duration-300 hover:shadow-lg hover:scale-[1.02] active:scale-[0.98] disabled:opacity-50"
         >
-          {submitting ? "Sending..." : "Send RSVP"}
+          {submitting ? "Skickar..." : "Skicka svar 🌿"}
         </Button>
       </div>
     </form>
