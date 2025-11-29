@@ -59,7 +59,7 @@ const Invite = () => {
 
 
                     <p className="text-xl md:text-2xl text-muted-foreground font-light animate-pop-in opacity-0" style={{ animationDelay: '200ms', animationFillMode: 'forwards' }}>
-                        Lilla Luna AKA Bé Loo Nah är på väg...
+                        Lilla Luna A.K.A. Bé Loo Nah är på väg...
                     </p>
 
 
