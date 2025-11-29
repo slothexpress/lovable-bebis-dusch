@@ -17,12 +17,12 @@ const RSVPForm = () => {
     e.preventDefault();
     
     if (!attendance) {
-      toast.error("Vänligen välj om du kommer");
+      toast.error("Svara om du ska vara med eller inte!");
       return;
     }
     
     if (!plusOne) {
-      toast.error("Vänligen ange om du tar med någon");
+      toast.error("Svara om du tar med en gäst eller inte!");
       return;
     }
 
@@ -36,7 +36,7 @@ const RSVPForm = () => {
           name: 'Guest RSVP',
           answer1: attendance,
           answer2: plusOne,
-          answer3: allergies || 'None specified'
+          answer3: allergies || 'Ingen specialkost'
         },
         'qphzOCWK-Et9KsVZF'
       );
@@ -52,11 +52,7 @@ const RSVPForm = () => {
   if (submitted) {
     return (
       <div className="text-center py-12 animate-pop-in">
-        <div className="text-6xl mb-4 animate-bounce-gentle">🎉</div>
-        <h3 className="font-display text-2xl text-primary mb-2">Tack så mycket!</h3>
-        <p className="text-muted-foreground">
-          Vi har tagit emot ditt svar. Vi ses snart!
-        </p>
+        <div className="text-6xl mb-4 animate-bounce-gentle">💌</div> {/* Svar är skickat*/}
       </div>
     );
   }
@@ -104,12 +100,12 @@ const RSVPForm = () => {
       <div className="space-y-4 animate-pop-in opacity-0" style={{ animationDelay: '300ms', animationFillMode: 'forwards' }}>
         <Label htmlFor="allergies" className="text-lg font-display text-cream">
 
-            SPECIALKOST ELLER ANNAT?
+            SPECIALKOST...
 
         </Label>
         <Textarea
           id="allergies"
-          placeholder=". . ."
+          placeholder=""
           value={allergies}
           onChange={(e) => setAllergies(e.target.value)}
           className="min-h-[100px] bg-secondary/50 border-border focus:border-primary resize-none transition-colors"
@@ -123,7 +119,7 @@ const RSVPForm = () => {
           disabled={submitting}
           className="w-full bg-primary text-primary-foreground hover:bg-mint-light font-display text-lg py-6 shadow-mint transition-all duration-300 hover:shadow-lg hover:scale-[1.02] active:scale-[0.98] disabled:opacity-50"
         >
-          {submitting ? "Skickar..." : "Skicka svar 🌿"}
+          {submitting ? "Skickar..." : "SKICKA"}
         </Button>
       </div>
     </form>
