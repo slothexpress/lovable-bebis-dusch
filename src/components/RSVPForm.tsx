@@ -66,37 +66,36 @@ const RSVPForm = () => {
       {/* Attendance */}
       <div className="space-y-4 animate-pop-in opacity-0" style={{ animationDelay: '100ms', animationFillMode: 'forwards' }}>
         <Label className="text-lg font-display text-cream">
-          Kommer du?
+          VILL DU VARA MED?
         </Label>
         <RadioGroup value={attendance} onValueChange={setAttendance} className="space-y-3">
+
           <div className="flex items-center space-x-3 p-4 rounded-lg border border-border bg-secondary/50 hover:border-primary/50 hover:bg-primary/5 transition-all duration-300 cursor-pointer group">
             <RadioGroupItem value="yes" id="yes" className="border-primary text-primary" />
-            <Label htmlFor="yes" className="cursor-pointer flex-1 group-hover:text-primary transition-colors">Ja, jag kommer! 🎊</Label>
+            <Label htmlFor="yes" className="cursor-pointer flex-1 group-hover:text-primary transition-colors">JA SÅKLART ❤️‍🔥‍️❤️‍🔥‍️❤️‍🔥‍</Label>
           </div>
           <div className="flex items-center space-x-3 p-4 rounded-lg border border-border bg-secondary/50 hover:border-primary/50 hover:bg-primary/5 transition-all duration-300 cursor-pointer group">
             <RadioGroupItem value="no" id="no" className="border-primary text-primary" />
-            <Label htmlFor="no" className="cursor-pointer flex-1 group-hover:text-primary transition-colors">Tyvärr, kan inte 😢</Label>
+            <Label htmlFor="no" className="cursor-pointer flex-1 group-hover:text-primary transition-colors">NEJ, JAG KAN INTE 💔💔😭😭</Label>
           </div>
-          <div className="flex items-center space-x-3 p-4 rounded-lg border border-border bg-secondary/50 hover:border-primary/50 hover:bg-primary/5 transition-all duration-300 cursor-pointer group">
-            <RadioGroupItem value="maybe" id="maybe" className="border-primary text-primary" />
-            <Label htmlFor="maybe" className="cursor-pointer flex-1 group-hover:text-primary transition-colors">Vet inte än 🤔</Label>
-          </div>
+
         </RadioGroup>
       </div>
 
       {/* Plus One */}
       <div className="space-y-4 animate-pop-in opacity-0" style={{ animationDelay: '200ms', animationFillMode: 'forwards' }}>
         <Label className="text-lg font-display text-cream">
-          Tar du med någon?
+          TAR DU MED EN GÄST?
+
         </Label>
         <RadioGroup value={plusOne} onValueChange={setPlusOne} className="space-y-3">
           <div className="flex items-center space-x-3 p-4 rounded-lg border border-border bg-secondary/50 hover:border-primary/50 hover:bg-primary/5 transition-all duration-300 cursor-pointer group">
             <RadioGroupItem value="yes" id="plus-yes" className="border-primary text-primary" />
-            <Label htmlFor="plus-yes" className="cursor-pointer flex-1 group-hover:text-primary transition-colors">Ja, +1 👫</Label>
+            <Label htmlFor="plus-yes" className="cursor-pointer flex-1 group-hover:text-primary transition-colors">Ja</Label>
           </div>
           <div className="flex items-center space-x-3 p-4 rounded-lg border border-border bg-secondary/50 hover:border-primary/50 hover:bg-primary/5 transition-all duration-300 cursor-pointer group">
             <RadioGroupItem value="no" id="plus-no" className="border-primary text-primary" />
-            <Label htmlFor="plus-no" className="cursor-pointer flex-1 group-hover:text-primary transition-colors">Nej, bara jag 🙋</Label>
+            <Label htmlFor="plus-no" className="cursor-pointer flex-1 group-hover:text-primary transition-colors">Nej</Label>
           </div>
         </RadioGroup>
       </div>
@@ -104,11 +103,13 @@ const RSVPForm = () => {
       {/* Allergies */}
       <div className="space-y-4 animate-pop-in opacity-0" style={{ animationDelay: '300ms', animationFillMode: 'forwards' }}>
         <Label htmlFor="allergies" className="text-lg font-display text-cream">
-          Matallergier eller specialkost?
+
+            SPECIALKOST ELLER ANNAT?
+
         </Label>
         <Textarea
           id="allergies"
-          placeholder="Berätta om du har några allergier eller specialkost..."
+          placeholder=". . ."
           value={allergies}
           onChange={(e) => setAllergies(e.target.value)}
           className="min-h-[100px] bg-secondary/50 border-border focus:border-primary resize-none transition-colors"

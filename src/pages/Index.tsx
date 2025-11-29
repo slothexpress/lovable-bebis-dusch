@@ -2,6 +2,7 @@ import { Baby, Heart, Leaf } from "lucide-react";
 import EventDetails from "@/components/EventDetails";
 import RSVPForm from "@/components/RSVPForm";
 import Confetti from "@/components/Confetti";
+import {useParams} from "react-router-dom";
 
 const Index = () => {
   return (
@@ -26,8 +27,22 @@ const Index = () => {
         <div className="relative z-10 container max-w-4xl mx-auto px-4 py-16 md:py-24 flex flex-col justify-center min-h-screen">
         {/* Header Section */}
         <header className="text-center mb-16">
-          
+
+            <div className="inline-flex items-center gap-3 px-6 py-3 rounded-full border border-primary/30 bg-primary/5 mb-8 animate-pop-in opacity-0" style={{ animationFillMode: 'forwards' }}>
+                <Baby className="w-7 h-7 text-primary animate-wiggle" />
+                <span className="text-base uppercase tracking-widest text-primary">
+                            TRANG HAR BEBBI
+                        </span>
+                <Baby className="w-7 h-7 text-primary animate-wiggle" style={{ animationDelay: '0.5s' }} />
+
+                <p>&nbsp;</p>
+
+            </div>
+
+
           <h1 className="font-display text-5xl md:text-7xl font-semibold mb-4 animate-pop-in opacity-0" style={{ animationDelay: '100ms', animationFillMode: 'forwards' }}>
+
+              <p>&nbsp;</p>
 
               <p className="shimmer-text">👶</p>
 
