@@ -11,13 +11,13 @@ const EventDetails = () => {
     {
       icon: Clock,
       label: "Tid",
-      value: "Kl. 15:00",
+      value: "Kl. 15:00 till SENT",
       delay: 200,
     },
     {
       icon: MapPin,
       label: "Plats",
-      value: "Montbijougatan 18, Malmö",
+      value: "Montbijougatan 18, MALMÖ",
       delay: 300,
     },
   ];

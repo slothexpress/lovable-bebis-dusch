@@ -1,4 +1,4 @@
-import { Baby, Heart, Leaf } from "lucide-react";
+import {Baby, Heart, Leaf, ShowerHead} from "lucide-react";
 import EventDetails from "@/components/EventDetails";
 import RSVPForm from "@/components/RSVPForm";
 import Confetti from "@/components/Confetti";
@@ -28,11 +28,19 @@ const Index = () => {
         {/* Header Section */}
         <header className="text-center mb-16">
 
+            <p>&nbsp;</p>
+
             <div className="inline-flex items-center gap-3 px-6 py-3 rounded-full border border-primary/30 bg-primary/5 mb-8 animate-pop-in opacity-0" style={{ animationFillMode: 'forwards' }}>
+
+
                 <Baby className="w-7 h-7 text-primary animate-wiggle" />
+
                 <span className="text-base uppercase tracking-widest text-primary">
-                            TRANG HAR BEBBI
+
+                            VÄLKOMMEN PÅ
+
                         </span>
+
                 <Baby className="w-7 h-7 text-primary animate-wiggle" style={{ animationDelay: '0.5s' }} />
 
                 <p>&nbsp;</p>
@@ -48,13 +56,19 @@ const Index = () => {
 
               <p>&nbsp;</p>
 
-              <p className="shimmer-text">Bebis Dusch</p>
+              <p className="shimmer-text">Bebis Dusch</p> {/* Landing Page */}
 
               <p>&nbsp;</p>
 
               <p className="shimmer-text">🚿</p>
 
+
+              <p>&nbsp;</p>
+
           </h1>
+
+
+
 
         </header>
 

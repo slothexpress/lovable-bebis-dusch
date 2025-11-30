@@ -86,7 +86,6 @@ const Invite = () => {
                         Detta ska såklart firas med FEST.
                     </p>
 
-
                 </header>
 
 
@@ -100,9 +99,20 @@ const Invite = () => {
                 <header className="text-center mb-16">
 
                     <p className="text-xl md:text-2xl text-muted-foreground font-light animate-pop-in opacity-0" style={{ animationDelay: '200ms', animationFillMode: 'forwards' }}>
-                        Förvänta dig mat, cocktails & mocktails.
+                        Förvänta dig festfeeling, cocktails/mocktails och käk.
                     </p>
 
+                    <p>&nbsp;</p>
+
+                    <p className="text-xl md:text-2xl text-muted-foreground font-light animate-pop-in opacity-0" style={{ animationDelay: '200ms', animationFillMode: 'forwards' }}>
+                        OSA SENAST 17 JANUARI
+                    </p>
+
+                    <p>&nbsp;</p>
+
+                    <p className="text-xl md:text-2xl text-muted-foreground font-light animate-pop-in opacity-0" style={{ animationDelay: '200ms', animationFillMode: 'forwards' }}>
+                        Och kom i tid så att vi kan överraska Trang tillsammans!
+                    </p>
 
                 </header>
 
