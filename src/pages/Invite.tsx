@@ -1,4 +1,4 @@
-import { Baby, Heart, Leaf } from "lucide-react";
+import {Baby, Heart, Leaf, ShowerHead} from "lucide-react";
 import EventDetails from "@/components/EventDetails";
 import RSVPForm from "@/components/RSVPForm";
 import Confetti from "@/components/Confetti";
@@ -111,7 +111,7 @@ const Invite = () => {
                     <p>&nbsp;</p>
 
                     <p className="text-xl md:text-2xl text-muted-foreground font-light animate-pop-in opacity-0" style={{ animationDelay: '200ms', animationFillMode: 'forwards' }}>
-                        Och kom i tid så att vi kan överraska Trang tillsammans!
+                        Kom i tid så kan vi överraska Trang tillsammans!
                     </p>
 
                 </header>
@@ -125,6 +125,35 @@ const Invite = () => {
                     </div>
                 </section>
 
+
+                <p>&nbsp;</p>
+                <p>&nbsp;</p>
+                <p>&nbsp;</p>
+                <p>&nbsp;</p>
+                <p>&nbsp;</p>
+                <p>&nbsp;</p>
+
+
+                <header className="text-center mb-16">
+
+                <div className="inline-flex items-center gap-3 px-6 py-3 rounded-full border border-primary/30 bg-primary/5 mb-8 animate-pop-in opacity-0" style={{ animationFillMode: 'forwards' }}>
+                    <p>&nbsp;</p>
+
+                    <ShowerHead className="w-7 h-7 text-primary animate-wiggle" />
+
+                    <span className="text-base uppercase tracking-widest text-primary">
+
+                            PORTKOD: ####
+
+                        </span>
+
+                    <ShowerHead className="w-7 h-7 text-primary animate-wiggle" style={{ animationDelay: '0.5s' }} />
+
+                    <p>&nbsp;</p>
+
+                </div>
+
+                </header>
 
             </div>
         </main>

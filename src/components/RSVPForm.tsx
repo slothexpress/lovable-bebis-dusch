@@ -128,7 +128,7 @@ const RSVPForm = () => {
 
             <Textarea
               id="allergies"
-              placeholder="T.ex. om du har specialkost/allergier eller vill sjunga en sång 🎤"
+              placeholder="T.ex. om du har specialkost/allergier eller bara vill sjunga en sång 🎤"
               value={allergies}
               onChange={(e) => setAllergies(e.target.value)}
               className="min-h-[100px] bg-secondary/50 border-border focus:border-primary resize-none transition-colors"
