@@ -103,7 +103,7 @@ const RSVPForm = () => {
                 <RadioGroupItem value="yes" id="plus-yes" className="border-primary text-primary" />
                 <Label htmlFor="plus-yes" className="cursor-pointer flex-1 group-hover:text-primary transition-colors">
 
-                    Ja, tar med någon bra!
+                    Yes, tar med någon bra!
 
                 </Label>
               </div>
@@ -112,7 +112,7 @@ const RSVPForm = () => {
                 <RadioGroupItem value="no" id="plus-no" className="border-primary text-primary" />
                 <Label htmlFor="plus-no" className="cursor-pointer flex-1 group-hover:text-primary transition-colors">
 
-                    Nej, solo är bäst på fest!
+                    Nope, solo är bäst på fest!
 
                 </Label>
               </div>
@@ -123,12 +123,14 @@ const RSVPForm = () => {
           {/* Allergies */}
           <div className="space-y-4 animate-pop-in opacity-0" style={{ animationDelay: '300ms', animationFillMode: 'forwards' }}>
             <Label htmlFor="allergies" className="text-lg font-display text-cream">
+
               Något annat?
+
             </Label>
 
             <Textarea
               id="allergies"
-              placeholder="T.ex. om du har specialkost/allergier eller bara vill sjunga en sång 🎤"
+              placeholder="T.ex. specialkost, allergier eller bara något kul du vill dela..."
               value={allergies}
               onChange={(e) => setAllergies(e.target.value)}
               className="min-h-[100px] bg-secondary/50 border-border focus:border-primary resize-none transition-colors"
