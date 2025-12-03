@@ -28,13 +28,22 @@ const Invite = () => {
             <div className="relative z-10 container max-w-4xl mx-auto px-4 py-16 md:py-24">
                 {/* Header Section */}
                 <header className="text-center mb-16">
-                    <div className="inline-flex items-center gap-3 px-6 py-3 rounded-full border border-primary/30 bg-primary/5 mb-8 animate-pop-in opacity-0" style={{ animationFillMode: 'forwards' }}>
-                        <Baby className="w-7 h-7 text-primary animate-wiggle" />
-                        <span className="text-base uppercase tracking-widest text-primary">
+
+                  <div className="inline-flex items-center gap-3 md:gap-6 px-6 md:px-10 py-3 md:py-6 rounded-full border border-primary/30 bg-primary/5 mb-8 md:mb-12 animate-pop-in opacity-0" style={{ animationFillMode: 'forwards' }}>
+
+                        <Baby className="w-9 h-9 md:w-16 md:h-16 text-primary animate-wiggle" />
+
+                        <span className="text-lg md:text-2xl uppercase tracking-widest text-primary">
+
+
                             HEJ {useParams().name}
+
+
                         </span>
-                        <Baby className="w-7 h-7 text-primary animate-wiggle" style={{ animationDelay: '0.5s' }} />
-                    </div>
+
+                        <Baby className="w-9 h-9 md:w-16 md:h-16 text-primary animate-wiggle" style={{ animationDelay: '0.5s' }} />
+
+                  </div>
 
 
                     <p>&nbsp;</p>
@@ -72,7 +81,21 @@ const Invite = () => {
                         ÄR PÅ VÄG
                     </p>
 
-                    <p>&nbsp;</p>
+
+
+                    {/* Countdown */}
+                    <section className="mb-16">
+                        <h2 className="text-center text-lg uppercase tracking-widest text-muted-foreground mb-6 animate-pop-in opacity-0" style={{ animationDelay: '400ms', animationFillMode: 'forwards' }}>
+
+
+                            <p>&nbsp;</p>
+
+
+                        </h2>
+                        <Countdown />
+                    </section>
+
+
 
                     {/* Animated baby icons */}
                     <div className="flex justify-center gap-4 mt-6 animate-pop-in opacity-0" style={{ animationDelay: '300ms', animationFillMode: 'forwards' }}>
@@ -90,15 +113,6 @@ const Invite = () => {
                     </p>
 
                 </header>
-
-
-                {/* Countdown */}
-                <section className="mb-16">
-                    <h2 className="text-center text-lg uppercase tracking-widest text-muted-foreground mb-6 animate-pop-in opacity-0" style={{ animationDelay: '400ms', animationFillMode: 'forwards' }}>
-                        Nedräkning
-                    </h2>
-                    <Countdown />
-                </section>
 
                 {/* Event Details */}
                 <section className="mb-20">
@@ -147,22 +161,22 @@ const Invite = () => {
 
                 <header className="text-center mb-16">
 
-                <div className="inline-flex items-center gap-3 px-6 py-3 rounded-full border border-primary/30 bg-primary/5 mb-8 animate-pop-in opacity-0" style={{ animationFillMode: 'forwards' }}>
-                    <p>&nbsp;</p>
 
-                    <ShowerHead className="w-7 h-7 text-primary animate-wiggle" />
+                    <div className="inline-flex items-center gap-3 md:gap-6 px-6 md:px-10 py-3 md:py-6 rounded-full border border-primary/30 bg-primary/5 mb-8 md:mb-12 animate-pop-in opacity-0" style={{ animationFillMode: 'forwards' }}>
 
-                    <span className="text-base uppercase tracking-widest text-primary">
+                        <Baby className="w-9 h-9 md:w-16 md:h-16 text-primary animate-wiggle" />
 
-                            PORTKOD: ####
+                        <span className="text-lg md:text-2xl uppercase tracking-widest text-primary">
+
+
+                               PORTKOD: ####
+
 
                         </span>
 
-                    <ShowerHead className="w-7 h-7 text-primary animate-wiggle" style={{ animationDelay: '0.5s' }} />
+                        <Baby className="w-9 h-9 md:w-16 md:h-16 text-primary animate-wiggle" style={{ animationDelay: '0.5s' }} />
 
-                    <p>&nbsp;</p>
-
-                </div>
+                    </div>
 
                 </header>
 

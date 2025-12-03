@@ -3,6 +3,7 @@ import EventDetails from "@/components/EventDetails";
 import RSVPForm from "@/components/RSVPForm";
 import Confetti from "@/components/Confetti";
 import {useParams} from "react-router-dom";
+import Countdown from "@/components/Countdown.tsx";
 
 const Index = () => {
   return (
@@ -67,6 +68,33 @@ const Index = () => {
 
           </h1>
 
+            <p className="text-xl md:text-2xl text-muted-foreground font-light animate-pop-in opacity-0" style={{ animationDelay: '200ms', animationFillMode: 'forwards' }}>
+                Lilla Luna A.K.A. Bé Loo Nah
+            </p>
+
+            <p>&nbsp;</p>
+
+            <p className="text-xl md:text-2xl text-muted-foreground font-light animate-pop-in opacity-0" style={{ animationDelay: '200ms', animationFillMode: 'forwards' }}>
+                ÄR PÅ VÄG
+            </p>
+
+
+
+            {/* Countdown */}
+            <section className="mb-16">
+                <h2 className="text-center text-lg uppercase tracking-widest text-muted-foreground mb-6 animate-pop-in opacity-0" style={{ animationDelay: '400ms', animationFillMode: 'forwards' }}>
+
+
+                    <p>&nbsp;</p>
+
+
+                </h2>
+                <Countdown />
+            </section>
+
+
+            <p>&nbsp;</p>
+            <p>&nbsp;</p>
 
             <div className="inline-flex items-center gap-3 px-6 py-3 rounded-full border border-primary/30 bg-primary/5 mb-8 animate-pop-in opacity-0" style={{ animationFillMode: 'forwards' }}>
                <p>&nbsp;</p>
