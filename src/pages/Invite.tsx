@@ -164,7 +164,7 @@ const Invite = () => {
 
                     <div className="inline-flex items-center gap-3 md:gap-6 px-6 md:px-10 py-3 md:py-6 rounded-full border border-primary/30 bg-primary/5 mb-8 md:mb-12 animate-pop-in opacity-0" style={{ animationFillMode: 'forwards' }}>
 
-                        <Baby className="w-9 h-9 md:w-16 md:h-16 text-primary animate-wiggle" />
+                        <ShowerHead className="w-9 h-9 md:w-16 md:h-16 text-primary animate-wiggle" />
 
                         <span className="text-lg md:text-2xl uppercase tracking-widest text-primary">
 
@@ -174,7 +174,7 @@ const Invite = () => {
 
                         </span>
 
-                        <Baby className="w-9 h-9 md:w-16 md:h-16 text-primary animate-wiggle" style={{ animationDelay: '0.5s' }} />
+                        <ShowerHead className="w-9 h-9 md:w-16 md:h-16 text-primary animate-wiggle" style={{ animationDelay: '0.5s' }} />
 
                     </div>
 
