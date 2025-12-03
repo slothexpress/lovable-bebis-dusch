@@ -2,6 +2,7 @@ import {Baby, Heart, Leaf, ShowerHead} from "lucide-react";
 import EventDetails from "@/components/EventDetails";
 import RSVPForm from "@/components/RSVPForm";
 import Confetti from "@/components/Confetti";
+import Countdown from "@/components/Countdown";
 import {useParams} from "react-router-dom";
 
 const Invite = () => {
@@ -90,6 +91,14 @@ const Invite = () => {
 
                 </header>
 
+
+                {/* Countdown */}
+                <section className="mb-16">
+                    <h2 className="text-center text-lg uppercase tracking-widest text-muted-foreground mb-6 animate-pop-in opacity-0" style={{ animationDelay: '400ms', animationFillMode: 'forwards' }}>
+                        Nedräkning
+                    </h2>
+                    <Countdown />
+                </section>
 
                 {/* Event Details */}
                 <section className="mb-20">
