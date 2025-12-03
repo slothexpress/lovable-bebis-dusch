@@ -71,7 +71,11 @@ const RSVPForm = () => {
       {/* Attendance */}
       <div className="space-y-4 animate-pop-in opacity-0" style={{ animationDelay: '100ms', animationFillMode: 'forwards' }}>
         <Label className="text-lg font-display text-cream">
-          Vill du vara med och fira?
+
+            {/* Dynamiskt NAMN */}
+
+      {name ? name.charAt(0).toUpperCase() + name.slice(1).toLowerCase() + "!" : ""} Vad säger du?
+
         </Label>
         <RadioGroup value={attendance} onValueChange={setAttendance} className="space-y-3">
           <div className="flex items-center space-x-3 p-4 rounded-lg border border-border bg-secondary/50 hover:border-primary/50 hover:bg-primary/5 transition-all duration-300 cursor-pointer group">
