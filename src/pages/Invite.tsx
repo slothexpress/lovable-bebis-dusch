@@ -101,13 +101,13 @@ const Invite = () => {
                 <header className="text-center mb-16">
 
                     <p className="text-xl md:text-2xl text-muted-foreground font-light animate-pop-in opacity-0" style={{ animationDelay: '200ms', animationFillMode: 'forwards' }}>
-                        Förvänta dig lek, cocktails/mocktails och käk.
+                        Förvänta dig mocktails, öl och käk.
                     </p>
 
                     <p>&nbsp;</p>
 
                     <p className="text-xl md:text-2xl text-muted-foreground font-light animate-pop-in opacity-0" style={{ animationDelay: '200ms', animationFillMode: 'forwards' }}>
-                        OSA SENAST 17 JANUARI
+                        OSA SENAST 14 DECEMBER
                     </p>
 
                     <p>&nbsp;</p>

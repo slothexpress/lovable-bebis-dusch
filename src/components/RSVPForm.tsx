@@ -103,7 +103,7 @@ const RSVPForm = () => {
                 <RadioGroupItem value="yes" id="plus-yes" className="border-primary text-primary" />
                 <Label htmlFor="plus-yes" className="cursor-pointer flex-1 group-hover:text-primary transition-colors">
 
-                    Yes, tar med någon bra!
+                    Yes, jag tar med någon bra!
 
                 </Label>
               </div>
