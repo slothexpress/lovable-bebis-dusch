@@ -78,7 +78,13 @@ const Index = () => {
                 ÄR PÅ VÄG
             </p>
 
+            <p>&nbsp;</p>
 
+            <p className="text-xl md:text-2xl text-muted-foreground font-light animate-pop-in opacity-0" style={{ animationDelay: '200ms', animationFillMode: 'forwards' }}>
+                ♡   07 MARS 2026   ♡
+            </p>
+
+            <p>&nbsp;</p>
 
             {/* Countdown */}
             <section className="mb-16">
@@ -93,7 +99,6 @@ const Index = () => {
             </section>
 
 
-            <p>&nbsp;</p>
             <p>&nbsp;</p>
 
             <div className="inline-flex items-center gap-3 px-6 py-3 rounded-full border border-primary/30 bg-primary/5 mb-8 animate-pop-in opacity-0" style={{ animationFillMode: 'forwards' }}>

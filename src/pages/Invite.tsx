@@ -44,7 +44,12 @@ const Invite = () => {
                         <Baby className="w-9 h-9 md:w-16 md:h-16 text-primary animate-wiggle" style={{ animationDelay: '0.5s' }} />
 
                   </div>
+                    <p>&nbsp;</p>
 
+
+                    <p className="text-xl md:text-2xl text-muted-foreground font-light animate-pop-in opacity-0" style={{ animationDelay: '200ms', animationFillMode: 'forwards' }}>
+                        Som du redan vet är det ju så att
+                    </p>
 
                     <p>&nbsp;</p>
 
@@ -79,6 +84,12 @@ const Invite = () => {
 
                     <p className="text-xl md:text-2xl text-muted-foreground font-light animate-pop-in opacity-0" style={{ animationDelay: '200ms', animationFillMode: 'forwards' }}>
                         ÄR PÅ VÄG
+                    </p>
+
+                    <p>&nbsp;</p>
+
+                    <p className="text-xl md:text-2xl text-muted-foreground font-light animate-pop-in opacity-0" style={{ animationDelay: '200ms', animationFillMode: 'forwards' }}>
+                        ♡   07 MARS 2026   ♡
                     </p>
 
 
