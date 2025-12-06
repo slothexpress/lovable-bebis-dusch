@@ -11,7 +11,7 @@ const EventDetails = () => {
     {
       icon: Clock,
       label: "Tid",
-      value: "Kl. 15:00 till SENT",
+      value: "Kl. 17:00 till SENT",
       delay: 200,
     },
     {
