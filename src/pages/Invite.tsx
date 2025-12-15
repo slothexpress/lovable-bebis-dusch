@@ -141,7 +141,7 @@ const Invite = () => {
                     <p>&nbsp;</p>
 
                     <p className="text-xl md:text-2xl text-muted-foreground font-light animate-pop-in opacity-0" style={{ animationDelay: '200ms', animationFillMode: 'forwards' }}>
-                        O.S.A. GÄRNA INNAN 5/12
+                        O.S.A. INNAN 10 JAN
                     </p>
 
                     <p>&nbsp;</p>

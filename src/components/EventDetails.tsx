@@ -5,7 +5,7 @@ const EventDetails = () => {
     {
       icon: Calendar,
       label: "Datum",
-      value: "Lördag 7 FEB, 2026",
+      value: "Lördag 24 JAN, 2026",
       delay: 100,
     },
     {
