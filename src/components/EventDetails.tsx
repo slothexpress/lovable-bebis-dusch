@@ -5,19 +5,19 @@ const EventDetails = () => {
     {
       icon: Calendar,
       label: "Datum",
-      value: "Lördag 24 JAN, 2026",
+      value: "Maj, 2026",
       delay: 100,
     },
     {
       icon: Clock,
       label: "Tid",
-      value: "Kl. 17:00 till SENT",
+      value: "Kl. 12:00 - 21.00",
       delay: 200,
     },
     {
       icon: MapPin,
       label: "Plats",
-      value: "Montbijougatan 18, MALMÖ",
+      value: "MALMÖ",
       delay: 300,
     },
   ];

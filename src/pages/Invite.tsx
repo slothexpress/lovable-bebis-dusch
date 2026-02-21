@@ -1,4 +1,4 @@
-import {Baby, Heart, Leaf, ShowerHead} from "lucide-react";
+import {Baby, Heart, Leaf, PartyPopper, ShowerHead} from "lucide-react";
 import EventDetails from "@/components/EventDetails";
 import RSVPForm from "@/components/RSVPForm";
 import Confetti from "@/components/Confetti";
@@ -31,7 +31,7 @@ const Invite = () => {
 
                   <div className="inline-flex items-center gap-3 md:gap-6 px-6 md:px-10 py-3 md:py-6 rounded-full border border-primary/30 bg-primary/5 mb-8 md:mb-12 animate-pop-in opacity-0" style={{ animationFillMode: 'forwards' }}>
 
-                        <Baby className="w-9 h-9 md:w-16 md:h-16 text-primary animate-wiggle" />
+                      <PartyPopper className="w-6 h-6 md:w-10 md:h-10 text-primary animate-wiggle" />
 
                         <span className="text-lg md:text-2xl uppercase tracking-widest text-primary">
 
@@ -41,55 +41,28 @@ const Invite = () => {
 
                         </span>
 
-                        <Baby className="w-9 h-9 md:w-16 md:h-16 text-primary animate-wiggle" style={{ animationDelay: '0.5s' }} />
+                      <PartyPopper className="w-6 h-6 md:w-10 md:h-10 text-primary animate-wiggle" />
+
 
                   </div>
                     <p>&nbsp;</p>
 
 
                     <p className="text-xl md:text-2xl text-muted-foreground font-light animate-pop-in opacity-0" style={{ animationDelay: '200ms', animationFillMode: 'forwards' }}>
-                        Som du redan vet är det ju så att
+                        Nu är det ju så att
                     </p>
 
                     <p>&nbsp;</p>
 
                     <p className="text-xl md:text-2xl text-muted-foreground font-light animate-pop-in opacity-0" style={{ animationDelay: '200ms', animationFillMode: 'forwards' }}>
-                        Trang har en bebbi i magen!
+                        Eveline ska gifta sig!
                     </p>
 
                     <p>&nbsp;</p>
 
-                    <p className="text-xl md:text-2xl text-muted-foreground font-light animate-pop-in opacity-0" style={{ animationDelay: '200ms', animationFillMode: 'forwards' }}>
-                        VI SKA ÖVERRASKA HENNE MED
-                    </p>
-
-
-                    <p>&nbsp;</p>
-                    <p>&nbsp;</p>
-
-                    <h1 className="font-display text-5xl md:text-7xl font-semibold mb-4 animate-pop-in opacity-0" style={{ animationDelay: '100ms', animationFillMode: 'forwards' }}>
-                        <p className="shimmer-text">👶 Bebis</p>
-                        <p className="shimmer-text">Dusch 🚿</p>
-                    </h1>
-
-                    <p>&nbsp;</p>
-                    <p>&nbsp;</p>
-
 
                     <p className="text-xl md:text-2xl text-muted-foreground font-light animate-pop-in opacity-0" style={{ animationDelay: '200ms', animationFillMode: 'forwards' }}>
-                        Lilla Luna A.K.A. Bé Loo Nah
-                    </p>
-
-                    <p>&nbsp;</p>
-
-                    <p className="text-xl md:text-2xl text-muted-foreground font-light animate-pop-in opacity-0" style={{ animationDelay: '200ms', animationFillMode: 'forwards' }}>
-                        ÄR PÅ VÄG
-                    </p>
-
-                    <p>&nbsp;</p>
-
-                    <p className="text-xl md:text-2xl text-muted-foreground font-light animate-pop-in opacity-0" style={{ animationDelay: '200ms', animationFillMode: 'forwards' }}>
-                        ♡   07 FEB 2026   ♡
+                        ♡   06 JUNI 2026   ♡
                     </p>
 
 
@@ -107,6 +80,31 @@ const Invite = () => {
                     </section>
 
 
+                    <p className="text-xl md:text-2xl text-muted-foreground font-light animate-pop-in opacity-0" style={{ animationDelay: '200ms', animationFillMode: 'forwards' }}>
+                        Men innan dess ska hon firas!
+                    </p>
+
+                    <p>&nbsp;</p>
+
+                    <p className="text-xl md:text-2xl text-muted-foreground font-light animate-pop-in opacity-0" style={{ animationDelay: '200ms', animationFillMode: 'forwards' }}>
+                        VI VILL ÖVERRASKA EVE MED
+                    </p>
+
+
+
+                    <p>&nbsp;</p>
+                    <p>&nbsp;</p>
+
+                    <h1 className="font-display text-5xl md:text-7xl font-semibold mb-4 animate-pop-in opacity-0" style={{ animationDelay: '100ms', animationFillMode: 'forwards' }}>
+                        <p className="shimmer-text">
+
+                            m ö h i p p e
+
+                        </p>
+                    </h1>
+
+                    <p>&nbsp;</p>
+
 
                     {/* Animated baby icons */}
                     <div className="flex justify-center gap-4 mt-6 animate-pop-in opacity-0" style={{ animationDelay: '300ms', animationFillMode: 'forwards' }}>
@@ -120,8 +118,10 @@ const Invite = () => {
                     <p>&nbsp;</p>
 
                     <p className="text-xl md:text-2xl text-muted-foreground font-light animate-pop-in opacity-0" style={{ animationDelay: '200ms', animationFillMode: 'forwards' }}>
-                        Detta ska såklart firas med FEST.
+                        Hoppas du kan (och vågar) vara med!
                     </p>
+
+
 
                 </header>
 
@@ -135,19 +135,19 @@ const Invite = () => {
                 <header className="text-center mb-16">
 
                     <p className="text-xl md:text-2xl text-muted-foreground font-light animate-pop-in opacity-0" style={{ animationDelay: '200ms', animationFillMode: 'forwards' }}>
-                        Förvänta dig mocktails, öl och käk.
+                        Förvänta dig mys, skratt och bus!
                     </p>
 
                     <p>&nbsp;</p>
 
                     <p className="text-xl md:text-2xl text-muted-foreground font-light animate-pop-in opacity-0" style={{ animationDelay: '200ms', animationFillMode: 'forwards' }}>
-                        O.S.A. INNAN 10 JAN
+                        O.S.A. INNAN 1 APRIL 2026
                     </p>
 
                     <p>&nbsp;</p>
 
                     <p className="text-xl md:text-2xl text-muted-foreground font-light animate-pop-in opacity-0" style={{ animationDelay: '200ms', animationFillMode: 'forwards' }}>
-                        Kom i tid så kan vi överraska Trang tillsammans!
+                        Kom ihåg att detta är en ÖVERRASKNING
                     </p>
 
                 </header>
@@ -175,17 +175,17 @@ const Invite = () => {
 
                     <div className="inline-flex items-center gap-3 md:gap-6 px-6 md:px-10 py-3 md:py-6 rounded-full border border-primary/30 bg-primary/5 mb-8 md:mb-12 animate-pop-in opacity-0" style={{ animationFillMode: 'forwards' }}>
 
-                        <ShowerHead className="w-9 h-9 md:w-16 md:h-16 text-primary animate-wiggle" />
+                        <PartyPopper className="w-6 h-6 md:w-10 md:h-10 text-primary animate-wiggle" />
 
                         <span className="text-lg md:text-2xl uppercase tracking-widest text-primary">
 
 
-                               PORTKOD: ####
+                               möhippe
 
 
                         </span>
 
-                        <ShowerHead className="w-9 h-9 md:w-16 md:h-16 text-primary animate-wiggle" style={{ animationDelay: '0.5s' }} />
+                        <PartyPopper className="w-6 h-6 md:w-10 md:h-10 text-primary animate-wiggle" style={{ animationDelay: '0.5s' }} />
 
                     </div>
 

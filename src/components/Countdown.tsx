@@ -9,8 +9,7 @@ interface TimeLeft {
 
 const Countdown = () => {
 
-    // Datum för Luna hihihihi
-  const targetDate = new Date("2026-02-07T15:00:00");
+  const targetDate = new Date("2026-06-06T14:00:00");
   
   const calculateTimeLeft = (): TimeLeft => {
     const difference = targetDate.getTime() - new Date().getTime();

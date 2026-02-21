@@ -1,4 +1,4 @@
-import {Baby, Heart, Leaf, ShowerHead} from "lucide-react";
+import {Baby, Glasses, Heart, Leaf, PartyPopper, ShowerHead} from "lucide-react";
 import EventDetails from "@/components/EventDetails";
 import RSVPForm from "@/components/RSVPForm";
 import Confetti from "@/components/Confetti";
@@ -34,57 +34,26 @@ const Index = () => {
             <div className="inline-flex items-center gap-3 px-6 py-3 rounded-full border border-primary/30 bg-primary/5 mb-8 animate-pop-in opacity-0" style={{ animationFillMode: 'forwards' }}>
 
 
-                <Baby className="w-7 h-7 text-primary animate-wiggle" />
+                <PartyPopper className="w-7 h-7 text-primary animate-wiggle" />
 
                 <span className="text-base uppercase tracking-widest text-primary">
 
-                            VÄLKOMMEN PÅ
+                            EVE GIFTER SIG
 
                         </span>
 
-                <Baby className="w-7 h-7 text-primary animate-wiggle" style={{ animationDelay: '0.5s' }} />
+                <PartyPopper className="w-7 h-7 text-primary animate-wiggle" style={{ animationDelay: '0.5s' }} />
 
-                <p>&nbsp;</p>
 
             </div>
 
 
-          <h1 className="font-display text-5xl md:text-7xl font-semibold mb-4 animate-pop-in opacity-0" style={{ animationDelay: '100ms', animationFillMode: 'forwards' }}>
-
-              <p>&nbsp;</p>
-
-              <p className="shimmer-text">👶</p>
-
-              <p>&nbsp;</p>
-
-              <p className="shimmer-text">Bebis Dusch</p> {/* Landing Page */}
-
-              <p>&nbsp;</p>
-
-              <p className="shimmer-text">🚿</p>
-
-
-              <p>&nbsp;</p>
-
-          </h1>
-
-            <p className="text-xl md:text-2xl text-muted-foreground font-light animate-pop-in opacity-0" style={{ animationDelay: '200ms', animationFillMode: 'forwards' }}>
-                Lilla Luna A.K.A. Bé Loo Nah
-            </p>
-
             <p>&nbsp;</p>
 
             <p className="text-xl md:text-2xl text-muted-foreground font-light animate-pop-in opacity-0" style={{ animationDelay: '200ms', animationFillMode: 'forwards' }}>
-                ÄR PÅ VÄG
+                ♡   06 JUN 2026   ♡
             </p>
 
-            <p>&nbsp;</p>
-
-            <p className="text-xl md:text-2xl text-muted-foreground font-light animate-pop-in opacity-0" style={{ animationDelay: '200ms', animationFillMode: 'forwards' }}>
-                ♡   07 FEB 2026   ♡
-            </p>
-
-            <p>&nbsp;</p>
 
             {/* Countdown */}
             <section className="mb-16">
@@ -99,24 +68,25 @@ const Index = () => {
             </section>
 
 
-            <p>&nbsp;</p>
 
-            <div className="inline-flex items-center gap-3 px-6 py-3 rounded-full border border-primary/30 bg-primary/5 mb-8 animate-pop-in opacity-0" style={{ animationFillMode: 'forwards' }}>
-               <p>&nbsp;</p>
+            <h1 className="font-display text-5xl md:text-7xl font-semibold mb-4 animate-pop-in opacity-0" style={{ animationDelay: '100ms', animationFillMode: 'forwards' }}>
 
-                <ShowerHead className="w-7 h-7 text-primary animate-wiggle" />
 
-                <span className="text-base uppercase tracking-widest text-primary">
+              <span className="text-base uppercase tracking-widest text-primary">
 
-                            PORTKOD: ####
+                            MEN FÖRST BLIR DET
+              </span>
 
-                        </span>
+              <p>&nbsp;</p>
 
-                <ShowerHead className="w-7 h-7 text-primary animate-wiggle" style={{ animationDelay: '0.5s' }} />
+              <p className="shimmer-text">MÖHIPPE</p> {/* Landing Page */}
 
-                <p>&nbsp;</p>
+              <p>&nbsp;</p>
 
-            </div>
+              <p className="shimmer-text">🥂</p>
+
+
+          </h1>
 
         </header>
 
