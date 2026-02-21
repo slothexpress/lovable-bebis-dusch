@@ -5,7 +5,8 @@ import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 import { Textarea } from "@/components/ui/textarea";
 import { Button } from "@/components/ui/button";
 import { toast } from "sonner";
-import emailjs from "@emailjs/browser";
+
+const SHEET_MONKEY_URL = "https://api.sheetmonkey.io/form/sCEmpohh9waXrgJKmk8mRf";
 
 const RSVPForm = () => {
   const { name } = useParams<{ name?: string }>();
@@ -27,16 +28,18 @@ const RSVPForm = () => {
     }
     setSubmitting(true);
     try {
-      await emailjs.send(
-        'service_efuzk8p',
-        'template_e50k5uj',
-        {
-          name: name || 'Guest RSVP',
-          answer2: phone,
-          answer3: allergies || 'Ingen specialkost'
-        },
-        'qphzOCWK-Et9KsVZF'
-      );
+      const response = await fetch(SHEET_MONKEY_URL, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          "Namn": name ? name.charAt(0).toUpperCase() + name.slice(1).toLowerCase() : "Guest RSVP",
+          "Kommer": attendance === "yes" ? "Ja" : "Nej",
+            "Telefon": phone,
+          "Specialkost": allergies || "Ingen specialkost",
+          "Datum": "x-sheetmonkey-current-date-time"
+        })
+      });
+      if (!response.ok) throw new Error("Något gick fel vid inskickning.");
       setSubmitted(true);
       toast.success("Tack för ditt svar!");
     } catch (err) {
