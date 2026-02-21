@@ -31,6 +31,7 @@ const Index = () => {
 
             <p>&nbsp;</p>
 
+
             <div className="inline-flex items-center gap-3 px-6 py-3 rounded-full border border-primary/30 bg-primary/5 mb-8 animate-pop-in opacity-0" style={{ animationFillMode: 'forwards' }}>
 
 
@@ -51,7 +52,7 @@ const Index = () => {
             <p>&nbsp;</p>
 
             <p className="text-xl md:text-2xl text-muted-foreground font-light animate-pop-in opacity-0" style={{ animationDelay: '200ms', animationFillMode: 'forwards' }}>
-                ♡   06 JUN 2026   ♡
+                ♡   06 JUNI 2026   ♡
             </p>
 
 
@@ -74,7 +75,7 @@ const Index = () => {
 
               <span className="text-base uppercase tracking-widest text-primary">
 
-                            MEN FÖRST BLIR DET
+                  MEN FÖRST BLIR DET
               </span>
 
               <p>&nbsp;</p>
@@ -85,8 +86,28 @@ const Index = () => {
 
               <p className="shimmer-text">🥂</p>
 
-
           </h1>
+
+            <p>&nbsp;</p>
+            <p>&nbsp;</p>
+
+            <div className="inline-flex items-center gap-3 px-6 py-3 rounded-full border border-primary/30 bg-primary/5 mb-8 animate-pop-in opacity-0" style={{ animationFillMode: 'forwards' }}>
+
+                <p>&nbsp;</p>
+
+                <PartyPopper className="w-7 h-7 text-primary animate-wiggle" />
+
+                <span className="text-base uppercase tracking-widest text-primary">
+
+                            BRA LIV
+
+                        </span>
+
+                <PartyPopper className="w-7 h-7 text-primary animate-wiggle" style={{ animationDelay: '0.5s' }} />
+
+
+            </div>
+
 
         </header>
 

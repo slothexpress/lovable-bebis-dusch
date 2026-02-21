@@ -5,7 +5,7 @@ const EventDetails = () => {
     {
       icon: Calendar,
       label: "Datum",
-      value: "Maj, 2026",
+      value: "9 maj 2026",
       delay: 100,
     },
     {
@@ -17,7 +17,7 @@ const EventDetails = () => {
     {
       icon: MapPin,
       label: "Plats",
-      value: "MALMÖ",
+      value: "Malmö",
       delay: 300,
     },
   ];
