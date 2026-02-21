@@ -10,7 +10,7 @@ import emailjs from "@emailjs/browser";
 const RSVPForm = () => {
   const { name } = useParams<{ name?: string }>();
   const [attendance, setAttendance] = useState<string>("");
-  const [plusOne, setPlusOne] = useState<string>("");
+  const [phone, setPhone] = useState<string>("");
   const [allergies, setAllergies] = useState<string>("");
   const [submitted, setSubmitted] = useState(false);
   const [submitting, setSubmitting] = useState(false);
@@ -21,9 +21,8 @@ const RSVPForm = () => {
       toast.error("Svara om du ska vara med eller inte!");
       return;
     }
-    // Only require plusOne if attendance is "yes"
-    if (attendance === "yes" && !plusOne) {
-      toast.error("Svara om du tar med en gäst eller inte!");
+    if (attendance === "yes" && !phone.trim()) {
+      toast.error("Fyll i ditt telefonnummer!");
       return;
     }
     setSubmitting(true);
@@ -33,8 +32,7 @@ const RSVPForm = () => {
         'template_e50k5uj',
         {
           name: name || 'Guest RSVP',
-          answer1: attendance,
-          answer2: plusOne,
+          answer2: phone,
           answer3: allergies || 'Ingen specialkost'
         },
         'qphzOCWK-Et9KsVZF'
@@ -70,7 +68,7 @@ const RSVPForm = () => {
     <form onSubmit={handleSubmit} className="space-y-8">
       {/* Attendance */}
       <div className="space-y-4 animate-pop-in opacity-0" style={{ animationDelay: '100ms', animationFillMode: 'forwards' }}>
-        <Label className="text-lg font-display text-cream">
+        <Label className="text-lg font-display text-primary">
 
             {/* Dynamiskt NAMN */}
 
@@ -93,54 +91,42 @@ const RSVPForm = () => {
         </RadioGroup>
       </div>
 
-      {/* Plus One & Allergies - only show if attendance is YES */}
+      {/* Phone Number - only show if attendance is YES */}
       {attendance === "yes" && (
-        <>
-          {/* Plus One */}
-          <div className="space-y-4 animate-pop-in opacity-0" style={{ animationDelay: '200ms', animationFillMode: 'forwards' }}>
-            <Label className="text-lg font-display text-cream">
-              Tar du med en gäst på fest?
-            </Label>
+        <div className="space-y-4 animate-pop-in opacity-0" style={{ animationDelay: '150ms', animationFillMode: 'forwards' }}>
+          <Label htmlFor="phone" className="text-lg font-display text-primary">
+            Telefonnummer
+          </Label>
+          <input
+            id="phone"
+            type="tel"
+            inputMode="tel"
+            autoComplete="tel"
+            required
+            value={phone}
+            onChange={e => setPhone(e.target.value)}
+            className="w-full px-4 py-3 rounded-lg border border-border bg-secondary/50 text-primary focus:border-primary transition-colors outline-none"
+          />
+        </div>
+      )}
 
-            <RadioGroup value={plusOne} onValueChange={setPlusOne} className="space-y-3">
-              <div className="flex items-center space-x-3 p-4 rounded-lg border border-border bg-secondary/50 hover:border-primary/50 hover:bg-primary/5 transition-all duration-300 cursor-pointer group">
-                <RadioGroupItem value="yes" id="plus-yes" className="border-primary text-primary" />
-                <Label htmlFor="plus-yes" className="cursor-pointer flex-1 group-hover:text-primary transition-colors">
+      {/* Allergies */}
+      {attendance === "yes" && (
+        <div className="space-y-4 animate-pop-in opacity-0" style={{ animationDelay: '300ms', animationFillMode: 'forwards' }}>
+          <Label htmlFor="allergies" className="text-lg font-display text-primary">
 
-                    Yes, jag tar med någon bra!
-
-                </Label>
-              </div>
-
-              <div className="flex items-center space-x-3 p-4 rounded-lg border border-border bg-secondary/50 hover:border-primary/50 hover:bg-primary/5 transition-all duration-300 cursor-pointer group">
-                <RadioGroupItem value="no" id="plus-no" className="border-primary text-primary" />
-                <Label htmlFor="plus-no" className="cursor-pointer flex-1 group-hover:text-primary transition-colors">
-
-                    Nope, solo är bäst på fest!
-
-                </Label>
-              </div>
-            </RadioGroup>
-
-          </div>
-
-          {/* Allergies */}
-          <div className="space-y-4 animate-pop-in opacity-0" style={{ animationDelay: '300ms', animationFillMode: 'forwards' }}>
-            <Label htmlFor="allergies" className="text-lg font-display text-cream">
-
-              Något annat?
+              Specialkost
 
             </Label>
 
             <Textarea
               id="allergies"
-              placeholder="T.ex. specialkost, allergier eller bara något kul du vill dela..."
+              placeholder="Allergier? Alkoholfritt? Eller något annat vi bör veta?"
               value={allergies}
               onChange={(e) => setAllergies(e.target.value)}
               className="min-h-[100px] bg-secondary/50 border-border focus:border-primary resize-none transition-colors"
             />
           </div>
-        </>
       )}
 
       {/* Submit */}
