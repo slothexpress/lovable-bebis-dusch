@@ -7,6 +7,8 @@ import { Button } from "@/components/ui/button";
 import { toast } from "sonner";
 
 const SHEET_MONKEY_URL = "https://api.sheetmonkey.io/form/sCEmpohh9waXrgJKmk8mRf";
+const RATE_LIMIT_SECONDS = 100;
+const LAST_SUBMIT_KEY = "rsvp_last_submit";
 
 const RSVPForm = () => {
   const { name } = useParams<{ name?: string }>();
@@ -18,6 +20,14 @@ const RSVPForm = () => {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    // Rate limiting logic
+    const lastSubmit = localStorage.getItem(LAST_SUBMIT_KEY);
+    const now = Date.now();
+    if (lastSubmit && now - parseInt(lastSubmit, 10) < RATE_LIMIT_SECONDS * 1000) {
+      const secondsLeft = Math.ceil((RATE_LIMIT_SECONDS * 1000 - (now - parseInt(lastSubmit, 10))) / 1000);
+      toast.error(`Vänta ${secondsLeft} sekunder innan du skickar igen.`);
+      return;
+    }
     if (!attendance) {
       toast.error("Svara om du ska vara med eller inte!");
       return;
@@ -41,6 +51,7 @@ const RSVPForm = () => {
       });
       if (!response.ok) throw new Error("Något gick fel vid inskickning.");
       setSubmitted(true);
+      localStorage.setItem(LAST_SUBMIT_KEY, now.toString()); // Store submit time
       toast.success("Tack för ditt svar!");
     } catch (err) {
       toast.error("Kunde inte skicka. Försök igen.");
