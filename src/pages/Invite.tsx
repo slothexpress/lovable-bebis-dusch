@@ -49,7 +49,7 @@ const Invite = () => {
 
 
                     <p className="text-xl md:text-2xl text-muted-foreground font-light animate-pop-in opacity-0" style={{ animationDelay: '200ms', animationFillMode: 'forwards' }}>
-                        Nu är det ju så att Eveline ska gifta sig!
+                        Som du redan vet - Eve ska gifta sig!
                     </p>
 
                     <p>&nbsp;</p>
@@ -110,22 +110,23 @@ const Invite = () => {
 
                     <p>&nbsp;</p>
 
-                    <p>&nbsp;</p>
-
-                    <p className="text-xl md:text-2xl text-muted-foreground font-light animate-pop-in opacity-0" style={{ animationDelay: '200ms', animationFillMode: 'forwards' }}>
-                        Inget pinsamt eller kostsamt.
-                    </p>
 
                     <p>&nbsp;</p>
 
                     <p className="text-xl md:text-2xl text-muted-foreground font-light animate-pop-in opacity-0" style={{ animationDelay: '200ms', animationFillMode: 'forwards' }}>
-                        Endast mys, skratt och mycket bus ♡
+                        Vi utlovar mys, skratt och bus ♡
                     </p>
 
                     <p>&nbsp;</p>
 
                     <p className="text-xl md:text-2xl text-muted-foreground font-light animate-pop-in opacity-0" style={{ animationDelay: '200ms', animationFillMode: 'forwards' }}>
                         Hoppas du kan vara med!
+                    </p>
+
+                    <p>&nbsp;</p>
+
+                    <p className="text-xl md:text-2xl text-muted-foreground font-light animate-pop-in opacity-0" style={{ animationDelay: '200ms', animationFillMode: 'forwards' }}>
+                        Bara att höra av dig vid frågor/funderingar.
                     </p>
 
 
@@ -141,23 +142,26 @@ const Invite = () => {
 
                 <header className="text-center mb-16">
 
+
                     <p className="text-xl md:text-2xl text-muted-foreground font-light animate-pop-in opacity-0" style={{ animationDelay: '200ms', animationFillMode: 'forwards' }}>
-                        Avslöja inga detaljer för Eve!
+                        Fler detaljer kommer dyka upp här på hemsidan.
                     </p>
 
                     <p>&nbsp;</p>
 
                     <p className="text-xl md:text-2xl text-muted-foreground font-light animate-pop-in opacity-0" style={{ animationDelay: '200ms', animationFillMode: 'forwards' }}>
-                        O.S.A. NEDAN INNAN 1 APRIL 2026
+                        O.S.A. I FORMULÄRET NEDAN SÅ SNART DU KAN
                     </p>
 
                     <p>&nbsp;</p>
 
                     <p className="text-xl md:text-2xl text-muted-foreground font-light animate-pop-in opacity-0" style={{ animationDelay: '200ms', animationFillMode: 'forwards' }}>
-                        Hör av dig om du har frågor ♡
+                        Det underlättar mycket för vår planering ♡
                     </p>
 
                     <p>&nbsp;</p>
+
+
 
                 </header>
 

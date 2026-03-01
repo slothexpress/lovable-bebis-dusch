@@ -35,7 +35,7 @@ const RSVPForm = () => {
           "Namn": name ? name.charAt(0).toUpperCase() + name.slice(1).toLowerCase() : "Guest RSVP",
           "Kommer": attendance === "yes" ? "Ja" : "Nej",
             "Telefon": phone,
-          "Specialkost": allergies || "Ingen specialkost",
+          "Specialkost": allergies || "-", // Ingen specialkost
           "Datum": "x-sheetmonkey-current-date-time"
         })
       });
@@ -117,11 +117,8 @@ const RSVPForm = () => {
       {attendance === "yes" && (
         <div className="space-y-4 animate-pop-in opacity-0" style={{ animationDelay: '300ms', animationFillMode: 'forwards' }}>
           <Label htmlFor="allergies" className="text-lg font-display text-primary">
-
               Specialkost
-
             </Label>
-
             <Textarea
               id="allergies"
               placeholder="Allergier? Alkoholfritt? Eller något annat vi bör veta?"
@@ -131,6 +128,13 @@ const RSVPForm = () => {
             />
           </div>
       )}
+
+      {/* Info note about contribution - always visible */}
+      <div className="animate-pop-in opacity-0 text-center text-sm text-primary/80 font-medium" style={{ animationDelay: '350ms', animationFillMode: 'forwards' }}>
+       Beroende på hur många vi blir har våra beräkningar hamnat på 400-500kr per person (exklusive middag ute).
+
+          Beloppet täcker då lunch, aktivitet, minimalt med pynt samt Eves hotell, middag + dryck till henne 💚
+      </div>
 
       {/* Submit */}
       <div className="animate-pop-in opacity-0 pt-4" style={{ animationDelay: '400ms', animationFillMode: 'forwards' }}>
