@@ -6,6 +6,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 import InviteRouteGuard from "@/pages/InviteRouteGuard";
+import BrideForm from "@/components/BrideForm.tsx";
 
 const queryClient = new QueryClient();
 
@@ -17,7 +18,7 @@ const App = () => (
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Index />} />
-
+          <Route path="/bruden" element={<BrideForm />} />
           <Route path="/:name" element={<InviteRouteGuard />} />
 
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
