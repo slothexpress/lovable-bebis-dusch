@@ -23,7 +23,7 @@ const EventDetails = () => {
   ];
 
   return (
-    <div className="grid gap-6 md:grid-cols-3">
+    <div className="grid gap-6 md:grid-cols-3 px-4 md:px-0">
       {details.map((detail, index) => (
         <div
           key={detail.label}

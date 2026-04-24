@@ -84,12 +84,23 @@ const Index = () => {
 
               <p>&nbsp;</p>
 
-              <p className="shimmer-text">🥂</p>
 
-          </h1>
+                <p className="shimmer-text">🥂</p>
+
+
+
+            </h1>
 
             <p>&nbsp;</p>
             <p>&nbsp;</p>
+
+
+            {/* Event Details */}
+            <section className="mb-20">
+                <EventDetails />
+            </section>
+
+
 
             <div className="inline-flex items-center gap-3 px-6 py-3 rounded-full border border-primary/30 bg-primary/5 mb-8 animate-pop-in opacity-0" style={{ animationFillMode: 'forwards' }}>
 
