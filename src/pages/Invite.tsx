@@ -4,7 +4,7 @@ import RSVPForm from "@/components/RSVPForm";
 import Confetti from "@/components/Confetti";
 import Countdown from "@/components/Countdown";
 import { useParams } from "react-router-dom";
-import { Dialog, DialogContent, DialogHeader, DialogFooter, DialogTitle, DialogDescription } from "@/components/ui/dialog";
+import { AgendaModal } from "@/components/AgendaModal";
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 
@@ -64,79 +64,13 @@ const Invite = () => {
         <>
         {/* Only show popup if not Sami */}
         {!isSami && (
-          <Dialog open={open} onOpenChange={handleDialogChange}>
-            <DialogContent className="max-w-2xl w-full max-h-[70vh] overflow-y-auto pb-8 sm:pb-6">
-              <DialogHeader>
-
-                  <br />
-
-                <DialogTitle className="text-center w-full">♡ LITE PRAKTISK INFO ♡ </DialogTitle>
-                <DialogDescription>
-                  {/* Replace this with your info text */}
-                  <br />
-
-                    <strong>EVELINE:</strong> <br />
-                    Tanken är att vi ska få Eve att komma till Triangeln C med tåget kl. <strong>12:33</strong>.
-                    Några av oss får möta upp henne där medan några preppar lunchen.
-                    Vi bestämmer hur vi delar upp oss längre fram och uppdaterar på hemsidan!
-
-                    <br /><br />
-
-                    Samling <strong>kl. 12:00</strong> gäller fortsatt.
-
-                    <br /><br />
-
-                  <strong>PLATS:</strong> <br />
-                  Lunch och lekar blir antingen hos Sami om det blir sol och vi kan vara på takterassen.
-                  Vid regn eller tråkigt väder kör vi hos Madde som har stor lägga där alla får plats under tak ♡
-
-                  <br /><br />
-
-
-                    Vi uppdaterar med adress så snart det blir säkrare hur vädret faktiskt blir.
-                    Båda bor vid Möllan så om du åker tåg - hoppa av på <strong>Triangeln C</strong>.
-
-                    <br /><br />
-
-                <strong>BOENDE:</strong> <br />
-                Vi har bokat <strong>Quality Hotel The Mill</strong> på Amiralsgatan
-                    så om du behöver boende får du gärna köra på samma för det betyder hotellfrukost tillsammans - MYS.
-
-                <br /><br />
-
-
-                <strong>MIDDAG:</strong> <br />
-                Det blir middag på restaurang runtomkring Möllan.
-                    Kom ihåg att din middag <strong>INTE</strong> är inräknad i det som du kommer behöva swisha :)
-
-                <br /><br />
-
-                  <strong>HA MED:</strong> <br />
-                  Kläder som man kan andas och röra sig i borde räcka - <strong>vi ska dansa</strong> -
-                    men önskar du byta om så kör på det!
-                  Egen vattenflaska är att föredra.
-
-                    <br /><br /><br /><br />
-
-                    <DialogTitle className="text-center w-full">♡ VI SES SNART, {guestName} ♡</DialogTitle>
-
-                    <br />
-
-                </DialogDescription>
-              </DialogHeader>
-              <DialogFooter>
-                <Button
-                  className="mt-4 w-full sm:w-auto"
-                  onClick={handleOk}
-                  disabled={submitting}
-                  type="button"
-                >
-                  ♡ JIPPI ♡
-                </Button>
-              </DialogFooter>
-              {/* X button is already included in DialogContent via DialogClose */}
-            </DialogContent>
-          </Dialog>
+          <AgendaModal
+            open={open}
+            onOpenChange={handleDialogChange}
+            guestName={guestName}
+            onOk={handleOk}
+            submitting={submitting}
+          />
         )}
 
         <main className="min-h-screen bg-background overflow-hidden">

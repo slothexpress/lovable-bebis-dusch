@@ -35,6 +35,8 @@ const BrideForm = () => {
 		navigate("/");
 	};
 
+    const brideName = "EVE"
+
 	const handleSubmit = async (e: React.FormEvent) => {
 		e.preventDefault();
 		if (!food) {
@@ -47,7 +49,7 @@ const BrideForm = () => {
 				"service_efuzk8p",
 				"template_e50k5uj",
 				{
-					name: "Bruden",
+					name: brideName,
 					answer1: food,
 				},
 				"qphzOCWK-Et9KsVZF"
@@ -102,7 +104,7 @@ const BrideForm = () => {
 
 				<div className="flex flex-col items-center text-center w-full">
 					<span className="text-lg md:text-2xl uppercase tracking-widest text-primary block">
-						♡ HEJ EVE ♡
+						♡ HEJ {brideName} ♡
 					</span>
 					<br />
 					<Label className="text-lg font-display text-primary block mb-6">

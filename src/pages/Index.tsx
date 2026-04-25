@@ -4,6 +4,7 @@ import RSVPForm from "@/components/RSVPForm";
 import Confetti from "@/components/Confetti";
 import {useParams} from "react-router-dom";
 import Countdown from "@/components/Countdown.tsx";
+import { AgendaModal } from "@/components/AgendaModal";
 
 const Index = () => {
   return (
@@ -28,6 +29,10 @@ const Index = () => {
         <div className="relative z-10 container max-w-4xl mx-auto px-4 py-16 md:py-24 flex flex-col justify-center min-h-screen">
         {/* Header Section */}
         <header className="text-center mb-16">
+          {/* Agenda Modal Button */}
+          <div className="mb-8 flex justify-center">
+            <AgendaModal />
+          </div>
 
             <p>&nbsp;</p>
 
