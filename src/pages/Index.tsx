@@ -5,6 +5,7 @@ import Confetti from "@/components/Confetti";
 import {useParams} from "react-router-dom";
 import Countdown from "@/components/Countdown.tsx";
 import { AgendaModal } from "@/components/AgendaModal";
+import AgendaSummary from "@/components/AgendaSummary";
 
 const Index = () => {
   return (
@@ -97,12 +98,11 @@ const Index = () => {
             </h1>
 
             <p>&nbsp;</p>
-            <p>&nbsp;</p>
 
 
             {/* Event Details */}
             <section className="mb-20">
-                <EventDetails />
+                <AgendaSummary />
             </section>
 
 
