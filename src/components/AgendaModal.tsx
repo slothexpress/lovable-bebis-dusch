@@ -28,11 +28,11 @@ const agenda: AgendaItem[] = [
     title: "SAMLING",
     desc: (
       <>
-          Samling <strong>kl. 12:00</strong> på Typografgatan 4A i Malmö <br /><br />
+          Samling på <strong>Typografgatan 4A</strong> kl. 12:00. På porttelefonen ringer du på <strong>Huynh, S</strong> och tar hissen till VÅNING 10. <br /><br />
 
-        Eve kommer till Triangeln C med tåget kl. <strong>12:33</strong> <br /><br />
+       Kl. <strong>12:33</strong> kommer Eve till <strong>Triangeln C</strong> med tåget.
 
-        Majoriteten går tillsammans och möter henne, medan resterande preppar lunchen. <br /> <br />
+        Majoriteten går tillsammans och möter henne, medan några preppar takterassen. <br /> <br />
 
           <strong>10 MIN PROMENAD</strong>
 
@@ -44,12 +44,13 @@ const agenda: AgendaItem[] = [
     title: "LUNCH",
     desc: (
       <>
-          Vi satsar på att grilla utomhus så klä dig efter väder. Det kommer finnas både alkoholfritt och alkoholdryck. <br /> <br />
+          Vi satsar på att grilla utomhus så klä dig efter väder. Det kommer finnas både alkoholfritt och alkoholdryck.<br /> <br />
 
-          Senast <strong>kl. 15:00</strong> behöver vi börja plocka undan eftersom vi har en tid att passa.
+          Cirka <strong>kl. 14:30</strong> behöver vi börja plocka undan eftersom vi har en tid att passa. <br /> <br />
 
 
-          Alla kommer även få ett kort som ska fyllas i (medtag penna) under dagen som Eve ska få ♡ <br /> <br />
+
+          Ta med penna! Alla kommer få ett kort att fylla i under dagen som Eve ska få ♡ <br /> <br />
 
 
           <strong>15 MIN PROMENAD</strong>
@@ -62,7 +63,7 @@ const agenda: AgendaItem[] = [
     title: "AKTIVITET",
     desc: (
       <>
-          Senast <strong>kl. 15:30</strong> måste vi gå vidare.
+          Senast <strong>kl. 15:30</strong> måste vi ha lämnat byggnaden eftersom
 
           Malmö Dansakademi väntar på oss med en danslektion i Burlesque Chair!  <br /> <br />
 
@@ -87,13 +88,12 @@ const agenda: AgendaItem[] = [
           Efter dansen är det fokus på hotell <strong>check-in</strong> för de som behöver göra det. <br /><br />
 
 
-          Samling igen <strong>kl. 19:30</strong> i lobbyn av Quality Hotel The Mill.
+          Prick <strong>kl. 19:30</strong> går vi (de som vill) ifrån hotellets lobby till middagen.
+
+          Kom i tid om du vill gå tillsammans! Annars ses vi på Grand.<br /><br />
 
 
-          Vi går iväg till middagen tillsammans för de som vill.  <br /><br />
-
-
-         Vid det här laget bör du ha fyllt i kortet du som du fått :)  <br /><br />
+         Vid det här laget bör ditt kort vara ifyllt :)  <br /><br />
 
 
           <strong>15 MIN PROMENAD</strong>
@@ -107,9 +107,9 @@ const agenda: AgendaItem[] = [
       <>
         Det blir middag på Grand på Möllan.
 
-          Maten är förbeställd så att middagen inte blir alltför sen.
+          Maten är förbeställd till kl. 20.
 
-          Här kan du beställa din dryck direkt i baren.
+          Här kan du beställa din dryck direkt i baren. <br /><br />
 
         <strong> GLÖM INTE</strong> att ta med ditt kort :)
 
@@ -117,9 +117,9 @@ const agenda: AgendaItem[] = [
 
           Efter maten får Eve korten av oss och om ingen har tjuvkikat blir det roligare att läsa upp.
 
-          Planen är att avrunda senast <strong>kl. 21:30</strong>.
+          Vi avrundar dagen senast <strong>kl. 21:30</strong>. <br /><br />
 
-          För de som vill, bjuder Grand på dans från kl. 22:00.
+          För de som är pigga, bjuder Grand på dans från kl. 22:00.
 
 
           <br /> <br />
